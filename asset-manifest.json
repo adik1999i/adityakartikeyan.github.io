@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/adityakartikeyan.github.io/static/css/main.0d63847e.css",
+    "main.js": "/adityakartikeyan.github.io/static/js/main.aff67ce1.js",
+    "static/media/me.png": "/adityakartikeyan.github.io/static/media/me.e943173cd36cae8c9ec1.png",
+    "static/media/me-about.jpeg": "/adityakartikeyan.github.io/static/media/me-about.cf2780bc27bc4a4c1245.jpeg",
+    "static/media/cv.pdf": "/adityakartikeyan.github.io/static/media/cv.901bd4bc0aea96929a3c.pdf",
+    "index.html": "/adityakartikeyan.github.io/index.html",
+    "main.0d63847e.css.map": "/adityakartikeyan.github.io/static/css/main.0d63847e.css.map",
+    "main.aff67ce1.js.map": "/adityakartikeyan.github.io/static/js/main.aff67ce1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d63847e.css",
+    "static/js/main.aff67ce1.js"
+  ]
+}
