@@ -17,27 +17,31 @@ const About = () => {
         <img src={ME} alt="" />
        </div>
       </div>
+
       <div className="about__content">
-      <article className='about__card'>
+        <div className="about__cards">
+        <article className='about__card'>
         <FaAward className='about__icon'/>
         <h5>Experience</h5>
         <small>1+ years working  </small>
       </article>
+        
+      
 
       <article className='about__card'>
-        <FaAward className='about__icon'/>
+        <VscFolderLibrary className='about__icon'/>
         <h5>Projects</h5>
         <small>3</small>
       </article>
 
       <article className='about__card'>
-        <VscFolderLibrary className='about__icon'/>
+        <FiUsers className='about__icon'/>
         <h5>Companies</h5>
         <small>2</small>
       </article>
 
-      </div>
-      <p>
+     </div>
+     <p>
         Hi my name is aditya kartikeyan , iam currently working in the it industry as a junior full stack developer.
         - Worked as a front-end developer for Capgemini for 1 year on a wrapper of React.js 
         - Having the skills of analysing , bug fixing and customisation 
@@ -46,6 +50,7 @@ const About = () => {
         - Currently interested in Cloud computing , Cloud deployment and developing.
 
       </p>
+      </div>
     </div>
     </section>
 
