@@ -15,9 +15,9 @@
 
 :root {
     --color-bg: rgb(0, 0, 0);
-    --color-bg-variant: #7b5a01;
-    --color-primary: #e9ba10;
-    --color-primary-variant: rgba(77,181,255,0.4);
+    --color-bg-variant: #ffff0098;
+    --color-primary: #ffd901;
+    --color-primary-variant: rgba(249, 255, 77, 0.4);
     --color-white: #fff;
     --color-light : rgba(255,255,255,0.6);
     --transition:all 400ms ease;

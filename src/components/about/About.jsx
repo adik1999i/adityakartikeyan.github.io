@@ -42,12 +42,12 @@ const About = () => {
 
      </div>
      <p>
-        Hi my name is aditya kartikeyan , iam currently working in the it industry as a junior full stack developer.
-        - Worked as a front-end developer for Capgemini for 1 year on a wrapper of React.js 
-        - Having the skills of analysing , bug fixing and customisation 
-        - Having Full stack experience creating projects using Spring , Spring boot and React.js 
-        - Ability to quickly adapt to the environment according to the needs , eager to learn attitude with a hunger for getting knowledge 
-        - Currently interested in Cloud computing , Cloud deployment and developing.
+        Hi my name is Aditya kartikeyan , Iam currently working in the it industry as a Junior Full Stack Developer.
+         Worked as a front-end developer for Capgemini for 1 year on a wrapper of React.js 
+         Having the skills of analysing , bug fixing and customisation 
+         Having Full stack experience creating projects using Spring , Spring boot and React.js 
+         Ability to quickly adapt to the environment according to the needs , eager to learn attitude with a hunger for getting knowledge 
+         Currently interested in Cloud computing , Cloud deployment and developing.
 
       </p>
       </div>
