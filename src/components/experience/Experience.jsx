@@ -12,41 +12,15 @@ const Experience = () => {
          <h2>Junior Software Engineer</h2>
          <h5>Limendo India</h5>
          <h6>01/06/2022 - Current</h6>
+         <br></br>
          <div className="experience__content">
-          <small>Working as a full stack developer here in limendo. Worked on projects having html,css,js as its core base and going to work on projects using react</small>
-          <br></br>
-        
-          <article className='experience__details'>
-          <BsPatchCheckFill className='experience__details-icon'/>
-          <div>
-          <h6>HTML</h6>
-          <small className='text-light'>intermediate</small>
-          </div>
-          </article>
+          <p>
+            Working as a full stack developer in limendo , working on projects having 
+            html,css,js as its core base. Currently working on projects with MERN as the 
+            tech stack.
 
-          <article className='experience__details'>
-          <BsPatchCheckFill className='experience__details-icon'/>
-          <div>
-          <h6>CSS</h6>
-          <small className='text-light'>intermediate</small>
-          </div> 
-          </article>
-
-          <article className='experience__details'>
-          <BsPatchCheckFill className='experience__details-icon'/>
-          <div>
-          <h6>JS</h6>
-          <small className='text-light'>intermediate</small>
-          </div>
-          </article>
-
-          <article className='experience__details'>
-          <BsPatchCheckFill className='experience__details-icon'/>
-          <div>
-          <h6>React</h6>
-          <small className='text-light'>Beginner</small>
-          </div>        
-          </article>
+          </p>
+         
 
          </div>
         </div>
@@ -54,41 +28,13 @@ const Experience = () => {
         <h2>Software Engineer/Analyst</h2>
          <h5>Capgemini</h5>
          <h6>25/05/2021 - 30/05/2022</h6>
+         <br></br>
          <div className="experience__content">
-          <small>Worked as a front end developer on a wrapper of react js called remix</small>
-          <br></br>
-           <article className='experience__details'>
-          <BsPatchCheckFill className='experience__details-icon'/>
-          <div>
-          <h6>HTML</h6>
-          <small className='text-light'>intermediate</small>
-          </div>
-          </article>
-
-          <article className='experience__details'>
-          <BsPatchCheckFill className='experience__details-icon'/>
-          <div>
-          <h6>CSS</h6>
-          <small className='text-light'>intermediate</small>
-          </div> 
-          </article>
-
-          <article className='experience__details'>
-          <BsPatchCheckFill className='experience__details-icon'/>
-          <div>
-          <h6>JS</h6>
-          <small className='text-light'>intermediate</small>
-          </div>
-          </article>
-
-          <article className='experience__details'>
-          <BsPatchCheckFill className='experience__details-icon'/>
-          <div>
-          <h6>React</h6>
-          <small className='text-light'>Beginner</small>
-          </div>        
-          </article>
-
+          <p>
+          Worked as a front-end developer on a wrapper of react Js for a top insurance project.
+          Was able to do analysing , customisation and bug fixes in the wrapper of React.js. Also
+          have basic knowledge on deployment.
+          </p>
          </div>
 
 

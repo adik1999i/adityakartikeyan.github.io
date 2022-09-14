@@ -25,11 +25,7 @@
     color: var(--color-primary);
 }
 
-.experience__content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-}
+
 
 .experience__details{
     display: flex;
@@ -53,10 +49,7 @@
         margin: 0 auto;
     }
 
-    .experience__content{
-     padding: 1rem;
-    }
-
+    
 }
 
 /* == small devices == */
