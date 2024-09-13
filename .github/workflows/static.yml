@@ -1,8 +1,8 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Workflow for deploying static content to GitHub Pages directly from main
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the default branch (main)
   push:
     branches: [main]
 
@@ -15,8 +15,7 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -32,16 +31,16 @@ jobs:
         run: npm install
 
       - name: Build the project
-        run: npm run build  # Make sure this command creates the `build` directory
+        run: npm run build  # Make sure this command generates the correct build directory (usually 'build' or 'dist')
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload build files
+      - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          # Ensure this path matches your build directory
-          path: './build'
+          # Ensure this path matches the location of your build output directory
+          path: './build'  # Change this if your build directory is named differently
 
       - name: Deploy to GitHub Pages
         id: deployment
