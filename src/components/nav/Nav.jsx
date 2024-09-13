@@ -8,17 +8,14 @@ const Nav = () => {
 
   return (
     <nav>
-      <a
-        href="#"
-        onClick={(e) => {
-          e.preventDefault(); // Prevents page reload for non-functional link
-          setActiveNav('#');
-        }}
+      <button
+        onClick={() => setActiveNav('#')}
         className={activeNav === '#' ? 'active' : ''}
         aria-label="Home"
+        style={{ background: 'none', border: 'none', cursor: 'pointer' }}
       >
         <AiOutlineHome />
-      </a>
+      </button>
       <a
         href="#about"
         onClick={() => setActiveNav('#about')}
