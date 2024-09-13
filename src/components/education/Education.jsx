@@ -22,6 +22,15 @@ const educationData = [
     image: require('../../assets/srm-marks-card-preview.png'), // Replace with actual path
     link: require('../../assets/SRM_Marks_Card.pdf'), // Replace with actual path
   },
+  {
+    title: 'School (Class 1 - 12)',
+    institution: 'Springdales Dhaula Kuan',
+    year: '2004-2017',
+    description:
+      'PCMC - CBSE CLASS 12TH - 77.4% ',
+    image: require('../../assets/logo_sticky.png'), // Replace with actual path
+    link: "#", // Replace with actual path
+  },
 ];
 
 const Education = () => {
