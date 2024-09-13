@@ -1,5 +1,6 @@
-import React from 'react'
-import './experience.css'
+import React from 'react';
+import './experience.css';
+
 const Experience = () => {
   return (
     <section id='experience'>
@@ -7,40 +8,53 @@ const Experience = () => {
       <h2>My Experience</h2>
 
       <div className="container experience__container">
+        {/* Limendo Experience */}
         <div className="experience__frontend">
-         <h2>Junior Software Engineer</h2>
-         <h5>Limendo India</h5>
-         <h6>01/06/2022 - Current</h6>
-         <br></br>
-         <div className="experience__content">
-          <p>
-            Working as a full stack developer in limendo , working on projects having 
-            html,css,js as its core base. Currently working on projects with MERN as the 
-            tech stack.
-
-          </p>
-         
-
-         </div>
+          <h2>Junior Software Engineer</h2>
+          <h5>Limendo India Pvt Ltd</h5>
+          <h6>June 2022 - January 2024</h6>
+          <br />
+          <div className="experience__content">
+            <ul>
+              <li>Engineered a CMS with Next.js and React, enhancing content management efficiency by 30% and reducing update times by 25%.</li>
+              <li>Led the development of an Analytical Dashboard in React, achieving a 20% improvement in data retrieval speed, facilitating improved decision-making across multiple departments.</li>
+              <li>Conducted comprehensive bug analysis and debugging across 100+ components, enhancing code quality by 40% and decreasing system downtime by 15%.</li>
+              <li>Collaborated with over 10 stakeholders, accelerating project delivery by 20% and aligning feature implementation with project goals.</li>
+            </ul>
+          </div>
         </div>
+
+        {/* Capgemini Experience */}
         <div className="experience__backend">
-        <h2>Software Engineer/Analyst</h2>
-         <h5>Capgemini</h5>
-         <h6>25/05/2021 - 30/05/2022</h6>
-         <br></br>
-         <div className="experience__content">
-          <p>
-          Worked as a front-end developer on a wrapper of react Js for a top insurance project.
-          Was able to do analysing , customisation and bug fixes in the wrapper of React.js. Also
-          have basic knowledge on deployment.
-          </p>
-         </div>
+          <h2>Software Engineer</h2>
+          <h5>Capgemini India</h5>
+          <h6>May 2021 - May 2022</h6>
+          <br />
+          <div className="experience__content">
+            <ul>
+              <li>Worked as a front-end developer focusing on React.js for a top insurance project.</li>
+              <li>Directed the adoption of the Remix framework, enhancing application performance significantly.</li>
+              <li>Achieved a high bug resolution rate through meticulous analysis and debugging practices, ensuring robust application reliability.</li>
+              <li>Championed code review processes, maintaining superior code quality and fostering a collaborative environment within the team.</li>
+            </ul>
+          </div>
+        </div>
 
-
+        {/* RedHat Partner Freelance Experience */}
+        <div className="experience__backend">
+          <h2>Freelancer, RedHat Partner</h2>
+          <h5>July 6th - August 1st, 2024</h5>
+          <br />
+          <div className="experience__content">
+            <ul>
+              <li>Freelanced as a RedHat Partner, focusing on lead generation and enhancing outreach efforts.</li>
+              <li>Collaborated closely with the team to identify potential leads and develop strategies, contributing significantly to the outreach campaigns.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
