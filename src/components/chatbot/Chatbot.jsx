@@ -1,4 +1,3 @@
-// Chatbot.js
 import React, { useState } from 'react';
 import './chatbot.css';
 
@@ -6,11 +5,11 @@ import './chatbot.css';
 const faqData = [
   {
     question: 'who are you',
-    answer: 'I am Aditya Kartikeyan, a Full Stack Developer pursuing a Master\'s in Business Analytics at the University of Sydney.',
+    answer: "I am Aditya Kartikeyan, a Full Stack Developer pursuing a Master's in Business Analytics at the University of Sydney.",
   },
   {
     question: 'current role',
-    answer: 'I am currently a Master\'s student in Business Analytics and a former Junior Software Engineer at Limendo India Pvt Ltd.',
+    answer: "I am currently a Master's student in Business Analytics and a former Junior Software Engineer at Limendo India Pvt Ltd.",
   },
   {
     question: 'skills',
@@ -26,7 +25,7 @@ const faqData = [
   },
   {
     question: 'educational background',
-    answer: 'I am currently pursuing a Master\'s in Business Analytics at the University of Sydney. I also hold a B.Tech in Information Technology from SRM Institute of Science & Technology.',
+    answer: "I am currently pursuing a Master's in Business Analytics at the University of Sydney. I also hold a B.Tech in Information Technology from SRM Institute of Science & Technology.",
   },
   {
     question: 'projects',
@@ -37,6 +36,7 @@ const faqData = [
 const Chatbot = () => {
   const [messages, setMessages] = useState([{ sender: 'bot', text: 'Hello! How can I assist you today?' }]);
   const [input, setInput] = useState('');
+  const [isChatbotVisible, setIsChatbotVisible] = useState(false); // State to control chatbot visibility
 
   // Function to find an answer based on the input question
   const findAnswer = (input) => {
@@ -66,30 +66,44 @@ const Chatbot = () => {
   };
 
   return (
-    <div className="chatbot">
-      <div className="chatbox">
-        {messages.map((msg, index) => (
-          <div key={index} className={`message ${msg.sender}`}>
-            {msg.text}
+    <div>
+      {/* Open button */}
+      {!isChatbotVisible && (
+        <button className="chatbot-open-btn" onClick={() => setIsChatbotVisible(true)}>
+          💬
+        </button>
+      )}
+
+      {/* Chatbot container */}
+      {isChatbotVisible && (
+        <div className="chatbot">
+          <div className="chatbox">
+            {messages.map((msg, index) => (
+              <div key={index} className={`message ${msg.sender}`}>
+                {msg.text}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      {/* Quick Reply Buttons */}
-      <div className="quick-replies">
-        <button onClick={() => handleQuickReply('who are you')}>Who are you?</button>
-        <button onClick={() => handleQuickReply('current role')}>Current Role?</button>
-        <button onClick={() => handleQuickReply('skills')}>Skills?</button>
-      </div>
-      <div className="input-container">
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-          placeholder="Type your message..."
-        />
-        <button onClick={handleSend}>Send</button>
-      </div>
+          <button className="chatbot-close-btn" onClick={() => setIsChatbotVisible(false)}>
+            ✖️
+          </button>
+          <div className="quick-replies">
+            <button onClick={() => handleQuickReply('who are you')}>Who are you?</button>
+            <button onClick={() => handleQuickReply('current role')}>Current Role?</button>
+            <button onClick={() => handleQuickReply('skills')}>Skills?</button>
+          </div>
+          <div className="input-container">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyPress={(e) => e.key === 'Enter' && handleSend()}
+              placeholder="Type your message..."
+            />
+            <button onClick={handleSend}>Send</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

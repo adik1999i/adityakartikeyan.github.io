@@ -91,3 +91,42 @@
     background-color: var(--color-primary-variant);
   }
   
+  /* Open Chatbot Button */
+.chatbot-open-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  
+  .chatbot-open-btn:hover {
+    background-color: var(--color-primary-variant);
+  }
+  
+  /* Close Chatbot Button */
+  .chatbot-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .chatbot-close-btn:hover {
+    color: var(--color-primary);
+  }
+  
