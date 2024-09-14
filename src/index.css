@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
 
-
+/* Global CSS */
 :root {
     --color-bg: #f4f4f4; /* Light gray background */
     --color-bg-variant: #ffffff; /* White for lighter elements */
@@ -12,71 +12,81 @@
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
-}
-
-html {
+  }
+  
+  /* Dark mode styles */
+  [data-theme='dark'] {
+    --color-bg: #2c2c2c; /* Dark background */
+    --color-bg-variant: #1a1a1a; /* Darker background for elements */
+    --color-primary: #b89b32; /* Darker gold for accents */
+    --color-primary-variant: #d4af37; /* Lighter gold for variant */
+    --color-white: #f4f4f4; /* Light gray text */
+    --color-light: rgba(244, 244, 244, 0.7); /* Softer light gray for secondary text */
+  }
+  
+  html {
     scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
+  }
+  
+  ::-webkit-scrollbar {
     display: none;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Oswald', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-}
-
-/* === general styles == */
-
-.container {
+  }
+  
+  /* General styles */
+  .container {
     width: var(--container-width-lg);
     margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-weight: 500;
     color: var(--color-white);
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: 2.5rem;
-}
-
-section {
+  }
+  
+  section {
     margin-top: 8rem;
-}
-
-section > h2, section > h5 {
+  }
+  
+  section > h2,
+  section > h5 {
     text-align: center;
     color: var(--color-light);
-}
-
-section > h2 {
+  }
+  
+  section > h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
-}
-
-.text-light {
+  }
+  
+  .text-light {
     color: var(--color-light);
-}
-
-a {
+  }
+  
+  a {
     color: var(--color-primary);
     transition: var(--transition);
-}
-
-a:hover {
+  }
+  
+  a:hover {
     color: var(--color-bg-variant);
-}
-
-.btn {
+  }
+  
+  .btn {
     width: max-content;
     display: inline-block;
     color: var(--color-primary);
@@ -85,45 +95,60 @@ a:hover {
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     background-color: var(--color-primary);
     color: var(--color-bg);
     border-color: transparent;
-}
-
-.btn-primary {
+  }
+  
+  .btn-primary {
     background: var(--color-primary);
     color: var(--color-bg);
-}
-
-img {
+  }
+  
+  img {
     display: block;
     width: 100%;
     object-fit: cover;
-}
-
-/* ==== medium devices == */
-
-@media screen and (max-width: 1024px) {
+  }
+  
+  /* Medium devices */
+  @media screen and (max-width: 1024px) {
     .container {
-        width: var(--container-width-md);
+      width: var(--container-width-md);
     }
-
+  
     section {
-        margin-top: 6rem;
+      margin-top: 6rem;
     }
-}
-
-/* == small devices == */
-
-@media screen and (max-width: 600px) {
+  }
+  
+  /* Small devices */
+  @media screen and (max-width: 600px) {
     .container {
-        width: var(--container-width-sm);
+      width: var(--container-width-sm);
     }
-
+  
     section {
-        margin-top: 2rem;
+      margin-top: 2rem;
     }
-}
+  }
+  
+  /* Theme toggle button styles */
+  .theme-toggle-button {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .theme-toggle-button:hover {
+    opacity: 0.8;
+  }
+  

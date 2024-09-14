@@ -1,52 +1,72 @@
-.project__container
-{
+.project__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
-}
-
-.project__item{
+  }
+  
+  .project__item {
     background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
-}
-
-.project__item:hover{
+  }
+  
+  .project__item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
-}
-
-.project_item h3{
-    margin: 1.2 0 2rem;
-}
-
-.project__item-cta{
+  }
+  
+  .project__item h3 {
+    margin: 1.2rem 0 2rem; /* Corrected margin syntax */
+    color: var(--color-white); /* Ensures the title has the correct color */
+  }
+  
+  .project__item-cta {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
-}
-
-
-@media screen and (max-width: 1024px){
-   .project__container {
-
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-   }
-
-}
-
-/* == small devices == */
-
-@media screen and (max-width: 600px){
-   
+  }
+  
+  /* Filter dropdown styles */
+  .project__filter {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .project__filter label {
+    margin-right: 0.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+  }
+  
+  .project__filter select {
+    padding: 0.5rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 0.3rem;
+    background: var(--color-bg-variant);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .project__filter select:hover {
+    border-color: var(--color-primary-variant);
+  }
+  
+  /* Responsive styles for medium devices */
+  @media screen and (max-width: 1024px) {
     .project__container {
-
-        grid-template-columns: 1fr;
-        gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
     }
-
-
-}
+  }
+  
+  /* Responsive styles for small devices */
+  @media screen and (max-width: 600px) {
+    .project__container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  
