@@ -1,5 +1,8 @@
 import React from 'react';
 import './experience.css';
+import limendo from "../../assets/limendo.jpeg"
+import Capgemini from "../../assets/capgemini.png"
+import Redhat from "../../assets/redhat.svg"
 
 const Experience = () => {
   return (
@@ -10,9 +13,18 @@ const Experience = () => {
       <div className="container experience__container">
         {/* Limendo Experience */}
         <div className="experience__frontend">
-          <h2>Junior Software Engineer</h2>
-          <h5>Limendo India Pvt Ltd</h5>
-          <h6>June 2022 - January 2024</h6>
+          <div className="experience__header">
+          <img
+              src={limendo} /* Replace with actual path to Limendo logo */
+              alt="Limendo Logo"
+              className="experience__image"
+            />
+            <div className="experience__text">
+              <h2>Junior Software Engineer</h2>
+              <h5>Limendo India Pvt Ltd</h5>
+              <h6>June 2022 - January 2024</h6>
+            </div>       
+          </div>
           <br />
           <div className="experience__content">
             <ul>
@@ -26,9 +38,18 @@ const Experience = () => {
 
         {/* Capgemini Experience */}
         <div className="experience__backend">
-          <h2>Software Engineer</h2>
-          <h5>Capgemini India</h5>
-          <h6>May 2021 - May 2022</h6>
+          <div className="experience__header">
+          <img
+              src={Capgemini} /* Replace with actual path to Capgemini logo */
+              alt="Capgemini Logo"
+              className="experience__image"
+            />
+            <div className="experience__text">
+              <h2>Software Engineer</h2>
+              <h5>Capgemini India</h5>
+              <h6>May 2021 - May 2022</h6>
+            </div>   
+          </div>
           <br />
           <div className="experience__content">
             <ul>
@@ -42,8 +63,17 @@ const Experience = () => {
 
         {/* RedHat Partner Freelance Experience */}
         <div className="experience__backend">
-          <h2>Freelancer, RedHat Partner</h2>
-          <h5>July 6th - August 1st, 2024</h5>
+          <div className="experience__header">
+          <img
+              src={Redhat} /* Replace with actual path to RedHat logo */
+              alt="RedHat Logo"
+              className="experience__image"
+            />
+            <div className="experience__text">
+              <h2>Freelancer, RedHat Partner</h2>
+              <h5>July 6th - August 1st, 2024</h5>
+            </div>  
+          </div>
           <br />
           <div className="experience__content">
             <ul>
