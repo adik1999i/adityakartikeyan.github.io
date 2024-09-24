@@ -14,7 +14,7 @@ import ThemeToggle from './components/toggle/ThemeToggle'
 
 const App = () => {
   return (
-    <>
+    <>  
     <ThemeToggle/>
     <Header />
     <Nav />
